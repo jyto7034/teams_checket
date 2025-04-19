@@ -1,0 +1,22 @@
+2025-04-19T12:26:12.326188Z  INFO main ThreadId(01) src\utils.rs:219: 로거 초기화 완료: 콘솔 및 파일(logs/app.log) 출력 활성화.
+2025-04-19T12:26:12.326376Z  INFO main ThreadId(01) src\main.rs:16: 팀즈 알림 누락 주기적 검사 도구를 시작합니다...    
+2025-04-19T12:26:12.326513Z  INFO main ThreadId(01) src\main.rs:19: 실행 파일 디렉토리: "F:\\work\\checker\\target\\debug"    
+2025-04-19T12:26:12.326635Z  INFO main ThreadId(01) src\main.rs:22: 설정 파일 읽는 중: "F:\\work\\checker\\target\\debug\\config.cfg"    
+2025-04-19T12:26:12.327012Z  INFO main ThreadId(01) src\main.rs:27:  - Excel 경로: F:\work\checker\target\debug\test.xlsx    
+2025-04-19T12:26:12.327102Z  INFO main ThreadId(01) src\main.rs:28:  - 관리 대상 시트: ["bubble_fighter", "mabinogi"]    
+2025-04-19T12:26:12.327181Z  INFO main ThreadId(01) src\main.rs:29:  - 알림 제목 (설정됨): Some("test")    
+2025-04-19T12:26:12.327290Z  INFO main ThreadId(01) src\main.rs:30:  - 알림 메시지 템플릿 (설정됨): Some("{count} 개의 누락된 데이터 존재.")    
+2025-04-19T12:26:12.327421Z  INFO main ThreadId(01) src\main.rs:43: 주기적 알림 확인 서비스 시작...    
+2025-04-19T12:26:12.327491Z  INFO main ThreadId(01) src\notification.rs:184: 알림 확인 서비스 시작. 매시간 11, 26, 41, 56분에 실행됩니다.
+2025-04-19T12:26:12.328135Z  INFO main ThreadId(01) src\notification.rs:198: 현재 시간: 21:26:12, 실행 조건 충족. 누락 항목 검사 시작...
+2025-04-19T12:26:12.328198Z  INFO main ThreadId(01) src\notification.rs:20: 누락 알림 확인 시작 (오늘 날짜 & 과거 시간 & 9분 경과 미완료 항목 확인)
+2025-04-19T12:26:12.330492Z  INFO main ThreadId(01) src\notification.rs:30: 오늘 날짜: 2025-04-19, 현재 시각: 21:26:12
+2025-04-19T12:26:12.332389Z  INFO main ThreadId(01) src\notification.rs:170: 확인 결과: 총 3개의 누락된 알림 항목 발견 (2개 시트)
+2025-04-19T12:26:12.332486Z  INFO main ThreadId(01) src\notification.rs:207: 2개 시트에서 총 3개의 누락된 항목 발견.
+2025-04-19T12:26:12.332577Z  INFO main ThreadId(01) src\notification.rs:214:   - 시트 [bubble_fighter]: 2025-04-19 20:16:00, 2025-04-19 20:46:00
+2025-04-19T12:26:12.332650Z  INFO main ThreadId(01) src\notification.rs:214:   - 시트 [mabinogi]: 2025-04-19 20:31:00
+2025-04-19T12:26:12.332939Z  INFO main ThreadId(01) src\utils.rs:137: 기존 보고서 파일 삭제: "F:\\work\\checker\\target\\debug\\missing.txt"
+2025-04-19T12:26:12.333166Z  INFO main ThreadId(01) src\utils.rs:151: 누락된 항목 보고서 작성 시작...
+2025-04-19T12:26:12.333234Z  INFO main ThreadId(01) src\utils.rs:169: 누락된 항목 보고서 작성 완료: "F:\\work\\checker\\target\\debug\\missing.txt"
+2025-04-19T12:26:12.333413Z  INFO main ThreadId(01) src\notification.rs:220: 누락 목록을 F:\work\checker\target\debug\missing.txt 에 저장했습니다.
+2025-04-19T12:26:12.333492Z  INFO main ThreadId(01) src\notification.rs:232: 알림 실행: Title='test', Message='3 개의 누락된 데이터 존재.'
